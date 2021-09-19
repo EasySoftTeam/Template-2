@@ -539,3 +539,161 @@ transform: rotate(3deg) scale(1.3);
         padding: 20px;
     }
 }
+/* //////////////////////////// our skills ////////////////////// */
+.our-skills .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.our-skills .container .testimonials {
+    flex-basis: 45%;
+}
+.our-skills .container .skills {
+    flex-basis: 45%;
+}
+.card-cont .card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.cord-cont .card p{
+    font-size: 16px;
+}
+.card-cont .card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+.our-skills .container .text {
+text-align: center;
+padding-bottom: 50px;
+line-height: 2;
+}
+.our-skills .text h3 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.our-skills .text p {
+    font-size: 17px;
+}
+.card .card-title {
+    line-height: 1.8;
+    position: relative;
+}
+.card-title p {
+    font-size: 17px;
+}
+.card-title .title {
+    font-size: 14px;
+    text-align: end;
+    margin-bottom: 10px;
+}
+.card .card-title::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    right: 0;
+    background-color: #aaa;
+    bottom: 0;
+}
+.card-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-cont ul {
+    display: flex;
+    margin: 30px;
+}
+.card-cont li {
+    width: 15px;
+    height: 15px;
+    border: #777 1px solid;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.card-cont li.active {
+    background-color: var(--main-color);
+    border: none;
+}
+.load-cont .load {
+    margin-bottom: 45px;
+}
+.load-cont .load h4 {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.load-cont .load div {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(207, 204, 204);
+    margin: 10px 0;
+}
+.load-cont .load .num1 {
+    background-color: var(--main-color);
+    width: 90%;
+    position: relative;
+}
+.load-cont .load .num1::after , .num4::after {
+    content: "90%";
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    right: -19px;
+    top: -35px;
+}
+.load-cont .load .num1::before ,.num2::before,.num3::before,.num4::before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: black transparent transparent;
+    right: -7px;
+    top: -8px;
+}
+.load-cont .load .num2 {
+    background-color: var(--main-color);
+    width: 85%;
+    position: relative;
+}
+.load-cont .load .num2::after {
+    content: "85%";
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    right: -19px;
+    top: -35px;
+}
+.load-cont .load .num3 {
+    background-color: var(--main-color);
+    width: 80%;
+    position: relative;
+}
+.load-cont .load .num3::after {
+    content: "80%";
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    right: -19px;
+    top: -35px;
+}
+.load-cont .load .num4 {
+    background-color: var(--main-color);
+    width: 90%;
+    position: relative;
+}
+@media (max-width:768px) {
+    .our-skills .container {
+        flex-direction: column;
+        padding: var(--section-padding) 25px;
+    }
+}
